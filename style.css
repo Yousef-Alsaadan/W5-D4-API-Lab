@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+
+    font-family: "Assistant", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.products{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 1rem;
+    padding: 1rem;
+}
+.products h1{
+    grid-column: 1/-1;
+    text-align: center;
+    padding-top: 5rem;
+    padding-right: 15rem;
+    padding-bottom: 5rem;
+    font-size: 3em;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    border-radius: 15px;
+    padding-top: 1rem;
+}
+.card img{
+    height: 400;
+    width: 400;
+    align-self: center;
+}
+
+.title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f1f1f1;
+    padding: 1rem;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    height: 3rem;
+}
+.title h3{
+    width: 80%;
+}
+
+
+@media only screen and (max-width: 992px) {
+    .products{
+        grid-template-columns: auto;
+    }
+
+    .products h1{
+        text-align: start;
+        padding-right: 0;
+        font-size: 2em;
+    }
+
+    .card img{
+        max-width: 100%;
+    }
+}
+@media only screen and (max-width: 1200px) and (min-width: 992px) {}
